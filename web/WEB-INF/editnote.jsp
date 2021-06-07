@@ -13,10 +13,11 @@
     </head>
     <body>
         <h1>Simple Note Keeper</h1>
-        <h2>View Note</h2>
-        <p><b>Title: </b>${title}</p>
-        <b>Contents: </b>
-        ${contents}
-        
+        <h2>Edit Note</h2>
+        <form method="post" action="note">
+        <p>Title: <input type="text" placeholder="${note.title}" name="title"></p>
+        <p>Contents: <input type="text" placeholder="${note.contents}" style="width: 300px; height: 300px" name="contents"></p>
+        <input type="submit" value="Save">
+        </form>
     </body>
 </html>
